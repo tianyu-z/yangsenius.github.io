@@ -1,0 +1,829 @@
+
+
+
+<!DOCTYPE html>
+<!--[if lte IE 9]>     <html class="no-js lte-ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta charset="utf-8" />
+
+<title>Yangenius养成记</title>
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+
+<link rel="shortcut icon" href="/static/v0.0.0/appIcons/favicon.png" type="image/x-icon" />
+<link rel="apple-touch-icon" href="/static/v0.0.0/appIcons/apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="80x80" href="/static/v0.0.0/appIcons/apple-touch-icon-80x80.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/static/v0.0.0/appIcons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/static/v0.0.0/appIcons/apple-touch-icon-152x152.png" />
+<link rel="apple-touch-icon" sizes="167x167" href="/static/v0.0.0/appIcons/apple-touch-icon-167x167.png" />
+
+<meta property="og:title" content="Super养成记 &amp;  | YangSENius">
+<meta property="og:url" content="https://yangsenius.github.io">
+<meta property="og:description" content="">
+<meta property="og:site_name" content="杨森">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:url" content="https://yangsenius.github.io">
+<meta name="twitter:title" content="杨森">
+<meta name="twitter:description" content="">
+
+
+
+<link rel="alternate" type="application/rss+xml" title="RSS " href="/blog/" />
+
+
+
+        <link rel="stylesheet" type="text/css" href="/html_style/a.css">
+
+
+
+
+
+        <!--[if lte IE 9]>
+          <script src="/static/v0.0.0/js/vendor/classList-55aabd716f.min.js"></script>
+          <script src="/static/v0.0.0/js/vendor/requestAnimationFrame-d5eb311bf6.js"></script>
+        <![endif]-->
+
+        <script src="/html_style/a.js"></script>
+
+        <script>(function(){var fn=function(){window.DM_APP_ERROR={timer:null,delay:3e3,hasError:!1,errorFn:function(r){console.error("DM_APP_ERROR",r),window.DM_APP_ERROR.hasError=!0}},window.DM_APP_ERROR.timer=setTimeout(function(){window.DM_APP_ERROR.hasError?[].slice.call(document.querySelectorAll("[data-scroll-item]")).forEach(function(r){return r.className+=" show"}):document.documentElement.className+=" no-js"},window.DM_APP_ERROR.delay),window.addEventListener("error",window.DM_APP_ERROR.errorFn,!1)};fn();})();</script>
+    </head>
+
+    <body class="blog-landing">
+
+
+        <div  data-dm-tmpl="dm-app"
+            data-dm-app
+            data-app-model='{"apiBasePath":"api", "basePath":"","homePath":"","routeBlacklist":[]}'>
+
+
+
+
+<header class="header " role="banner" data-dm-tmpl="header" data-header>
+  <div class="cf container">
+    <div class="burger-btn--wrap" data-burger-wrap>
+      <button class="burger-btn" data-burger>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="heading--loader">
+        <div class="heading--loader-inner" data-ib-target></div>
+      </div>
+    </div>
+
+    <!--导航栏菜单 ！！！！在这里！！！！！！！-->
+    <!--<nav class="site-nav site-nav&#45;&#45;is-home" data-site-nav role="navigation">-->
+    <nav class="site-nav g-md-col-6 g-lg-col-11 g-md-push-1 g-lg-col-11 g-lg-col-11 site-nav--is-home" data-site-nav role="navigation">
+      <ul class="cf unstyled site-nav--list">
+        <li class="site-nav--list-item site-nav--home site-nav--deepmind">
+          <a class="no-underline white p--module" href="/" data-has-subitems>主页</a>
+        </li>
+
+
+          <li class="site-nav--list-item site-nav--research" data-primary-nav-item>
+            <a class="no-underline white p--module" href="/research/" data-has-subitems>
+              资源
+            </a>
+
+
+
+          </li>
+
+          <li class="site-nav--list-item site-nav--applied" data-primary-nav-item>
+            <a class="no-underline white p--module" href="/applied/" data-has-subitems>
+              博客
+            </a>
+
+
+
+
+          </li>
+
+          <li class="site-nav--list-item site-nav--research" data-primary-nav-item>
+            <a class="no-underline white p--module" href="/blog/" data-has-subitems>
+               段子手
+            </a>
+
+
+          </li>
+
+          <li class="site-nav--list-item site-nav--generic" data-primary-nav-item>
+            <a class="no-underline white p--module" href="/myself/" data-has-subitems>
+              我是谁
+            </a>
+
+
+          <!-- </li> -->
+
+
+
+
+      </ul>
+
+    </nav>
+
+  </div>
+
+
+<!--折叠按钮，！！！！！在这里-->
+
+
+  <div class="menu bg-grey-light" data-dm-tmpl="menu">
+    <div class="menu--logo-wrapper">
+      <img src="/static/v0.0.0/images/deepmind_logo_swirl.png" class="menu--logo">
+    </div>
+
+    <div class="cf container relative">
+
+
+      <!--<section class="g-sm-col-4 g-md-col-3 g-lg-col-3  menu-item menu-item&#45;&#45;research">-->
+      <section class="g-sm-col-4 g-md-col-2 g-lg-col-3 g-lg-push-1 menu-item menu-item--research">
+        <header class="menu-item--header">
+          <!--<h1 class="h5 menu-item&#45;&#45;heading border-bottom">-->
+          <h1 class="h4 menu-item--heading border-bottom">
+            <a class="no-underline" href="/">望尽天涯路</a>
+          </h1>
+        </header>
+
+        <div class="menu-item--items">
+
+          <h2 class="h6 menu-item--item-heading border-bottom no-link">
+
+              主要研究
+
+          </h2>
+
+
+          <ul class="cf unstyled">
+
+            <li class="left menu-item--items--subitem">
+              <a class="no-underline black p--module" href="/research/alphago/">
+                <strong>机器学习与神经网络</strong>
+              </a>
+            </li>
+
+            <li class="left menu-item--items--subitem">
+              <a class="no-underline black p--module" href="/research/dqn/">
+                <strong>网页设计与制作</strong>
+              </a>
+            </li>
+
+            <li class="left menu-item--items--subitem">
+              <a class="no-underline black p--module" href="/research/dnc/">
+                <strong>包罗万象</strong>
+              </a>
+            </li>
+
+          </ul>
+
+
+
+
+
+
+
+          <h2 class="h6 menu-item--item-heading border-bottom None">
+
+            <a class="no-underline" href="/research/open-source/">
+
+
+
+            </a>
+
+          </h2>
+
+
+
+
+        </div>
+
+
+
+<div class="menu-item--latest-news">
+  <!--<h4 class="h4 menu-item&#45;&#45;latest-news-heading">-->
+  <h4 class="menu-item--latest-news-heading">
+    独上高楼，望尽天涯路
+  </h4>
+  <a class="h6 underline" href="/blog/label/">标签的局限</a>
+</div>
+
+
+      </section>
+      <!---->
+
+      <!--<section class="g-sm-col-4 g-md-col-3 g-lg-col-3 g-md-gut g-lg-gut menu-item menu-item&#45;&#45;applied">-->
+      <section class="g-sm-col-4 g-md-col-2 g-lg-col-3 g-md-gut g-lg-gut menu-item menu-item--applied">
+        <header class="menu-item--header">
+          <!--<h1 class="h5 menu-item&#45;&#45;heading border-bottom">-->
+          <h1 class="h4 menu-item--heading border-bottom">
+            <a class="no-underline" href="/applied/">为伊消得人憔悴</a>
+          </h1>
+        </header>
+
+        <div class="menu-item--items">
+
+          <h2 class="h6 menu-item--item-heading border-bottom None">
+
+            <a class="no-underline" href="/applied/deepmind-health/">
+
+              1
+
+            </a>
+
+          </h2>
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+<div class="menu-item--latest-news">
+  <!--<h4 class="h4 menu-item&#45;&#45;latest-news-heading">-->
+  <h4 class="menu-item--latest-news-heading">
+    文章
+  </h4>
+  <a class="h6 underline" href="/blog/inference/">简单的推理</a>
+</div>
+
+
+      </section>
+      <!---->
+      <!--<div class="cf lg-hide"></div>-->
+      <!---->
+
+      <!--<section class="g-sm-col-4 g-md-col-3 g-lg-col-3 g-lg-gut menu-item menu-item&#45;&#45;deepmind">-->
+      <section class="g-sm-col-4 g-md-col-2 g-lg-col-3 g-md-gut g-lg-gut menu-item menu-item--deepmind">
+        <header class="menu-item--header">
+          <!--<h1 class="h5 menu-item&#45;&#45;heading border-bottom">-->
+          <h1 class="h4 menu-item--heading border-bottom">
+            <a class="no-underline" href="/child/">灯火阑珊处</a>
+          </h1>
+        </header>
+        <div class="menu-item--items">
+
+          <h2 class="h6 menu-item--item-heading border-bottom None">
+
+            <a class="no-underline" href="/child/min/">
+
+              敏妹想吃猪蹄
+
+            </a>
+
+          </h2>
+
+
+
+
+          <h2 class="h6 menu-item--item-heading border-bottom None">
+
+            <a class="no-underline" href="/child/bo">
+
+              张博同学一定要发愤图强
+
+            </a>
+
+          </h2>
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+      </section>
+      <!---->
+
+      <div class="cf"></div>
+
+
+
+<!--<div class="g-sm-col-4 g-md-col-4 g-lg-col-9 border-top menu-item&#45;&#45;generic">-->
+<div class="g-sm-col-4 g-md-col-4 g-lg-col-8 border-top menu-item--generic">
+  <ul class="menu-item--generic-list unstyled">
+
+    <li class="menu-item--generic--item ">
+        <a class="black no-underline p--module" href="/">
+          <strong>现在</strong>
+        </a>
+      </li>
+
+    <li class="menu-item--generic--item ">
+        <a class="black no-underline p--module" href="/blog/">
+          <strong>还在 &amp; 搭建</strong>
+        </a>
+      </li>
+
+    <li class="menu-item--generic--item ">
+        <a class="black no-underline p--module" href="/myself/">
+          <strong>我是谁?</strong>
+        </a>
+      </li>
+
+    <li class="menu-item--generic--item ">
+        <a class="black no-underline p--module" href="/press/">
+          <strong>我在哪？</strong>
+        </a>
+      </li>
+
+    <li class="menu-item--generic--item last-item">
+        <a class="black no-underline p--module" href="/terms-and-conditions/">
+          <strong>我在干什么？</strong>
+        </a>
+      </li>
+
+    <li class="menu-item--generic--item last-item">
+        <a class="black no-underline p--module" href="/privacy-policy/">
+          <strong>以后都会有料的</strong>
+        </a>
+      </li>
+
+  </ul>
+</div>
+
+
+
+
+  <span
+    class="page-load-progress"
+    data-dm-tmpl="page-load-progress">
+  </span>
+</header>
+
+          <main class="wrapper " role="main" data-dm-tmpl="wrapper" data-wrapper>
+
+
+<div class="page page-blog-listing" data-dm-page="blog-listing">
+  <section class="section--block">
+    <div class="container cf">
+      <header class="section--header g-sm-col-4 g-lg-col-11 g-lg-push-1">
+  <h1 class="h6 uppercase left ">一个正经的 &amp; 学术遐想 </h1>
+
+    <a class="btn right" href="/blog/feed/basic/" data-ignore-link-click>
+
+			<svg class="icon icon-rss icon-white">
+				<title>点我没用</title>
+				<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rss"></use>
+			</svg>
+
+    	点我 没用
+	</a>
+
+</header>
+
+
+
+<!--  <p><h1 class="heading heading--research h1">
+  <a class="underline" href="/blog/label/">热烈欢迎 敏妹小朋友 来网站里面踩一踩，撒花#\0.0/#</a>
+</h1></p>  -->
+
+
+
+ <link rel="stylesheet" media="all" href="/html_style/2.css" data-turbolinks-track="true" />
+<script src="https://github-atom-io-herokuapp-com.global.ssl.fastly.net/assets/application-006f0807613f7765e38bf9babe1dea07.js" data-turbolinks-track="true"></script>
+
+<section>
+        <div class="hero-logo-circles">
+          <img class="hero-logo-circle" src="https://github-atom-io-herokuapp-com.global.ssl.fastly.net/assets/index-portal-red-semi-085b4e44d49b2ffe935cc1b2b3094ce8.svg" alt="Index portal red semi">
+          <img class="hero-logo-circle" src="https://github-atom-io-herokuapp-com.global.ssl.fastly.net/assets/index-portal-red-be5d1b8a52c13bf286560aba3e4c8c30.svg" alt="Index portal red">
+          <img class="hero-logo-circle" src="https://github-atom-io-herokuapp-com.global.ssl.fastly.net/assets/index-portal-orange-semi-d2010f0f8e41e03dbf2b5c52166abe4b.svg" alt="Index portal orange semi">
+          <img class="hero-logo-circle" src="https://github-atom-io-herokuapp-com.global.ssl.fastly.net/assets/index-portal-orange-b3bddfb758b91d22f43d0e14ed8e29da.svg" alt="Index portal orange">
+          <img class="hero-logo-circle" src="https://github-atom-io-herokuapp-com.global.ssl.fastly.net/assets/index-portal-yellow-semi-545681fe77ff01659d472bd379a9f38b.svg" alt="Index portal yellow semi">
+          <img class="hero-logo-circle" src="https://github-atom-io-herokuapp-com.global.ssl.fastly.net/assets/index-portal-yellow-ff207a58ad4f450ea9ac0e17224b39f1.svg" alt="Index portal yellow">
+          <img class="hero-logo-circle" src="https://github-atom-io-herokuapp-com.global.ssl.fastly.net/assets/index-portal-green-semi-2d5bc571ee90e710d93f7ae7ddd06e85.svg" alt="Index portal green semi">
+          <img class="hero-logo-circle" src="https://github-atom-io-herokuapp-com.global.ssl.fastly.net/assets/index-portal-green-6ab85a1e7343a232273868031b242806.svg" alt="Index portal green">
+          <img class="hero-logo-circle" src="https://github-atom-io-herokuapp-com.global.ssl.fastly.net/assets/index-portal-blue-semi-7333f1323549be50644411b691b173dd.svg" alt="Index portal blue semi">
+          <img class="hero-logo-circle" src="https://github-atom-io-herokuapp-com.global.ssl.fastly.net/assets/index-portal-blue-92fc2c151190795bd0147c03d4fb8352.svg" alt="Index portal blue">
+
+      </div></section>
+
+<!--  文章列表在这里-->
+<h5>&nbsp;</h5>
+
+<article id="4" name="pose machine"
+  class="g-sm-col-4 featured-block featured-block--research faux-link-block"
+  data-dm-tmpl="featured"
+  data-scroll-item
+  data-ib-hover-item>
+  <header class="featured-block--header g-md-col-5 g-lg-col-9" data-scroll-item>
+    <h1 class="heading heading--research h3">
+      <a class="underline" href="/blog/pose-machine/">Pose Machine:Articulated Pose Estimation via Inference Machines</a>
+    </h1>
+  </header>
+  <div class="right featured-block--hero-img g-md-col-5 g-lg-col-6" data-scroll-item>
+    <div class="img-holder img-holder--1-1 img-holder--research">
+
+
+      <img class="img--object-fit img--object-width featured-block--hero-img-untreated" src="https://raw.githubusercontent.com/yangsenius/yangsenius.github.io/master/blog/pose-machine/pose.png"
+        sizes="(max-width: 768px) 300px, (min-width: 768px) 650px" >
+      <div class="grad-map--research grad-map--absolute grad-map--ib">
+        <img class="img--object-fit img--object-width" src="https://raw.githubusercontent.com/yangsenius/yangsenius.github.io/master/blog/pose-machine/pose.png"
+         sizes="(max-width: 768px) 300px, (min-width: 768px) 650px">
+        <div class="grad-map--ib-target" data-ib-hover-target="research"></div>
+      </div>
+
+    </div>
+  </div>
+  <section class="featured-block--info g-sm-col-4 g-md-col-5 g-lg-col-5 g-md-push-1 g-lg-push-1">
+    <p>&nbsp;</p>
+    <p>一个由精准的显式模型到运用信息融合的隐式模型的转折点！在2014ECCV上发表，convolutinal pose machine 的前身</p>
+
+    <p>运用级联，将对每个单独部件的估计信息结合起来，从中提取语义特征，再进一步地精确估计下个阶段的每个部件位置</p>
+    <p>深度卷积神经网络成功的最大的“Trick”，就是信息的抽取与融合吗？</p>
+    <a class="p--meta underline underline--blue-3 link--icon" href="/blog/pose-machine/">
+      <svg class="icon icon-arrow">
+        <use xlink:href="#arrow"></use>
+      </svg>
+      阅读更多
+    </a>
+    <footer class="cf featured-block--author">
+
+      <p class="p--meta left">
+        <span class="black">
+          作者：杨森
+        </span><br>
+        <time class="grey-mid-light" datetime="2018-05-14T16:00:00+01:00" data-timestamp="1526310000000">
+          2018年6月1日
+      </time></p>
+    </footer>
+  </section>
+  <a href="/blog/pose-machine/" class="faux-link-block--link">xxx</a>
+</article>
+<p>&nbsp;</p>
+
+<article id="3" name="推断的介入"
+  class="g-sm-col-4 featured-block featured-block--research faux-link-block"
+  data-dm-tmpl="featured"
+  data-scroll-item
+  data-ib-hover-item>
+  <header class="featured-block--header g-md-col-5 g-lg-col-9" data-scroll-item>
+    <h1 class="heading heading--research h3">
+      <a class="underline" href="/blog/inference/">推断的介入</a>
+    </h1>
+  </header>
+  <div class="right featured-block--hero-img g-md-col-5 g-lg-col-6" data-scroll-item>
+    <div class="img-holder img-holder--1-1 img-holder--research">
+
+
+      <img class="img--object-fit img--object-width featured-block--hero-img-untreated" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527877970215&di=e47ede659af318210328009d7503d555&imgtype=0&src=http%3A%2F%2Fwww.raincent.com%2Fuploadfile%2F2018%2F0111%2F20180111044046507.jpg"
+        sizes="(max-width: 768px) 300px, (min-width: 768px) 650px" >
+      <div class="grad-map--research grad-map--absolute grad-map--ib">
+        <img class="img--object-fit img--object-width" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527877970215&di=e47ede659af318210328009d7503d555&imgtype=0&src=http%3A%2F%2Fwww.raincent.com%2Fuploadfile%2F2018%2F0111%2F20180111044046507.jpg"
+         sizes="(max-width: 768px) 300px, (min-width: 768px) 650px">
+        <div class="grad-map--ib-target" data-ib-hover-target="research"></div>
+      </div>
+
+    </div>
+  </div>
+  <section class="featured-block--info g-sm-col-4 g-md-col-5 g-lg-col-5 g-md-push-1 g-lg-push-1">
+    <p>&nbsp;</p>
+    <p>善有善报，恶有恶报。</p>
+    <p>虽然世间并没有将这份准则执行地那么恰如其分，但是万物归根结底，必然有着因果之间的联系。</p>
+    <p>而人生匆匆，为什么愚蠢的我们总是在苦苦寻觅事情的答案，why？</p>
+    <p>剪不断，理还乱，只好奉上因果推断</p>
+    <a class="p--meta underline underline--blue-3 link--icon" href="/blog/inference/">
+      <svg class="icon icon-arrow">
+        <use xlink:href="#arrow"></use>
+      </svg>
+      阅读更多
+    </a>
+    <footer class="cf featured-block--author">
+
+      <p class="p--meta left">
+        <span class="black">
+          作者：杨森
+        </span><br>
+        <time class="grey-mid-light" datetime="2018-05-14T16:00:00+01:00" data-timestamp="1526310000000">
+          2018年5月20日
+      </time></p>
+    </footer>
+  </section>
+  <a href="/blog/inference/" class="faux-link-block--link">xxx</a>
+</article>
+<p>&nbsp;</p>
+
+<article id ="2" name= "标签思维的局限"
+  class="g-sm-col-4 featured-block featured-block--research faux-link-block"
+  data-dm-tmpl="featured"
+  data-scroll-item
+  data-ib-hover-item>
+  <header class="featured-block--header g-md-col-5 g-lg-col-9" data-scroll-item>
+    <h1 class="heading heading--research h3">
+      <a class="underline" href="/blog/label/"  target="_parent">标签思维的局限</a>
+    </h1>
+  </header>
+  <div class="right featured-block--hero-img g-md-col-5 g-lg-col-6" data-scroll-item>
+    <div class="img-holder img-holder--1-1 img-holder--research">
+
+
+      <img class="img--object-fit img--object-width featured-block--hero-img-untreated" width="40%" src="https://raw.githubusercontent.com/yangsenius/yangsenius.github.io/master/blog/label/panda.png">
+      <div class="grad-map--research grad-map--absolute grad-map--ib">
+        <img class="img--object-fit img--object-width" src="https://raw.githubusercontent.com/yangsenius/yangsenius.github.io/master/blog/label/panda.png"
+        >
+        <div class="grad-map--ib-target" data-ib-hover-target="research"></div>
+      </div>
+
+    </div>
+  </div>
+  <section class="featured-block--info g-sm-col-4 g-md-col-5 g-lg-col-5 g-md-push-1 g-lg-push-1">
+    <p>&nbsp;</p>
+    <p>在生活中，聪明的人常常告诫我们，不要给事物轻易下定义，不要轻易给他人打上标签，因为“标签”的一种贬义替代词汇是“偏见”。然而目前的机器学习正利用人类的标签思维进行学习，所以机器学习到头来，学习到的都是我们的偏见吗？</p>
+
+    <p>概括地讲，人类的标签思维是为视觉感知与语言表达需要的一种折衷，标签最大的用处在于交流与储存，而对于视觉感知来讲，“标签”是一种片面的图像表征，对于智能机器来讲，它应该学到编码更多信息的层级表征，而不单纯是标签</p>
+    <a class="p--meta underline underline--blue-3 link--icon" href="/blog/label/">
+      <svg class="icon icon-arrow">
+        <use xlink:href="#arrow"></use>
+      </svg>
+      阅读更多
+    </a>
+    <footer class="cf featured-block--author">
+
+      <p class="p--meta left">
+        <span class="black">
+          作者：杨森
+        </span><br>
+        <time class="grey-mid-light" datetime="2018-05-14T16:00:00+01:00" data-timestamp="1526310000000">
+          2018年4月29日
+      </time></p>
+    </footer>
+  </section>
+  <a href="/blog/label/" target="_parent" class="faux-link-block--link">xxx</a>
+</article>
+
+<p>&nbsp;</p>
+
+<article id=“1” name="Capsules Net在人体姿态估计上的潜力"
+  class="g-sm-col-4 featured-block featured-block--research faux-link-block"
+  data-dm-tmpl="featured"
+  data-scroll-item
+  data-ib-hover-item>
+  <header class="featured-block--header g-md-col-5 g-lg-col-9" data-scroll-item>
+    <h1 class="heading heading--research h3">
+      <a class="underline" href="/blog/capsules-pose/"  target="_parent">Capsules Net在人体姿态估计上的潜力</a>
+    </h1>
+  </header>
+  <div class="right featured-block--hero-img g-md-col-5 g-lg-col-6" data-scroll-item>
+    <div class="img-holder img-holder--1-1 img-holder--research">
+
+
+      <img class="img--object-fit img--object-width featured-block--hero-img-untreated" width="40%" src="https://raw.githubusercontent.com/yangsenius/images/master/em.PNG"
+       >
+      <div class="grad-map--research grad-map--absolute grad-map--ib">
+        <img class="img--object-fit img--object-width" src="https://raw.githubusercontent.com/yangsenius/images/master/em.PNG"
+       >
+        <div class="grad-map--ib-target" data-ib-hover-target="research"></div>
+      </div>
+
+    </div>
+  </div>
+  <section class="featured-block--info g-sm-col-4 g-md-col-5 g-lg-col-5 g-md-push-1 g-lg-push-1">
+    <p>&nbsp;</p>
+    <p>Hinton 关于capsules的第二篇论文Matrix Capsules with EM routing 和人体姿态估计相关的论文如Associative Embedding, stacked hourglass等，我渐渐发现了这两类研究方向在核心思想上的一些共通之处，即自下而上地获得全局信息，利用全局信息去解析局部特征，并进行预测。</p>
+
+    <p>近年来很多取得成功并广泛应用的深度网络设计都蕴含着这一思想，比如Deep Residual Net中的残差模块，Densely Connected Network卷积层的全连接，Fully Connected Network中的特征融合，U-net中的反卷积，还有Stacked Hourglass，其中 hourglass的设计更是淋漓尽致地表达了这一思想，不断pooling获得全局信息，然后结合局部信息进行unsampling，方法简单粗暴，通过关节点位置的监督约束来回归出heatmap</p>
+    <a class="p--meta underline underline--blue-3 link--icon" href="/blog/capsules-pose/">
+      <svg class="icon icon-arrow">
+        <use xlink:href="#arrow"></use>
+      </svg>
+      阅读更多
+    </a>
+    <footer class="cf featured-block--author">
+
+      <p class="p--meta left">
+        <span class="black">
+          作者：杨森
+        </span><br>
+        <time class="grey-mid-light" datetime="2018-05-14T16:00:00+01:00" data-timestamp="1526310000000">
+          2018年4月25日
+      </time></p>
+    </footer>
+  </section>
+  <a href="/blog/capsules-pose/" target="_parent" class="faux-link-block--link">xxx</a>
+</article>
+
+<p>&nbsp;</p>
+
+
+
+<!-- 网页尾部-->
+
+</div>
+
+          </main>
+          <div class="nav-mask"></div>
+          <section class="search fixed top-0 right-0 bottom-0 left-0" data-dm-tmpl="search">
+  <div class="cf container relative h100">
+    <section class="search--input-wrapper relative">
+      <div class="g-md-col-1 g-lg-col-1 search--mega-icon">
+        <svg class="icon icon-search icon-search-large">
+          <use xlink:href="#search_large"></use>
+        </svg>
+      </div>
+      <input class="g-sm-col-4 g-md-col-5 g-lg-col-11 search--mega-input" type="search" name="search" placeholder="Search DeepMind" data-search-input>
+      <span class="p--meta grey-mid uppercase absolute right-0" data-total-results data-scroll-item></span>
+    </section>
+    <section class="search--input-wrapper search--input-wrapper--sticky">
+      <div class="g-md-col-1 g-lg-col-1 search--mega-icon">
+        <svg class="icon icon-search icon-search-large">
+          <use xlink:href="#search_large"></use>
+        </svg>
+      </div>
+      <input class="g-sm-col-4 g-md-col-5 g-lg-col-11 search--mega-input" type="search" name="search" placeholder="Search DeepMind" data-search-input>
+    </section>
+    <div class="search--results-wrapper" data-results-wrap></div>
+    <div class="g-sm-col-4 text-center search--results-btn-wrap">
+      <a class="btn" href="#" data-results-page-btn>Show all results</a>
+    </div>
+    <button class="top-0 right-0 black" data-close-btn>
+      <svg class="icon icon-close">
+        <title>close</title>
+        <use xlink:href="#close"></use>
+      </svg>
+    </button>
+  </div>
+</section>
+
+<nav class="bg-blue-4 listing--pagination" data-total-pages="8" data-dm-tmpl="listing-pagination">
+  <div class="cf container">
+    <div class="text-center p--standard">
+      
+        <div data-pagination-pages="">
+          
+          <span class="listing--pagination-pages">
+            Page <div class="dropdown-menu--parent">
+              <span data-current-page="" class="dropdown-menu--button blue-3 listing--pagination-current">1</span>
+
+              <div class="dropdown-menu">
+              <div class="dropdown-menu--content">
+                <ul class="unstyled">
+                  
+                    <li class="p--module is-active">
+                      <a class="no-underline white listing--pagination-number" data-page="1" href="https://deepmind.com/blog/">1</a>
+                    </li>
+                  
+                    <li class="p--module">
+                      <a class="no-underline white listing--pagination-number" data-page="2" href="https://deepmind.com/blog/?page=2">2</a>
+                    </li>
+                  
+                    <li class="p--module">
+                      <a class="no-underline white listing--pagination-number" data-page="3" href="https://deepmind.com/blog/?page=3">3</a>
+                    </li>
+                  
+                    <li class="p--module">
+                      <a class="no-underline white listing--pagination-number" data-page="4" href="https://deepmind.com/blog/?page=4">4</a>
+                    </li>
+                  
+                    <li class="p--module">
+                      <a class="no-underline white listing--pagination-number" data-page="5" href="https://deepmind.com/blog/?page=5">5</a>
+                    </li>
+                  
+                    <li class="p--module">
+                      <a class="no-underline white listing--pagination-number" data-page="6" href="https://deepmind.com/blog/?page=6">6</a>
+                    </li>
+                  
+                    <li class="p--module">
+                      <a class="no-underline white listing--pagination-number" data-page="7" href="https://deepmind.com/blog/?page=7">7</a>
+                    </li>
+                  
+                    <li class="p--module">
+                      <a class="no-underline white listing--pagination-number" data-page="8" href="https://deepmind.com/blog/?page=8">8</a>
+                    </li>
+                  
+                </ul>
+              </div>
+              </div>
+            </div> of <span class="listing--pagination-of">8</span>
+          </span>
+          <a class="listing--pagination-next" href="https://deepmind.com/blog/?page=2">
+            <svg class="icon icon-arrow">
+              <use xlink:href="#arrow"></use>
+            </svg>
+          </a>
+        </div>
+      
+    </div>
+  </div>
+</nav>
+
+
+<footer class="footer bg-grey-light" role="contentinfo">
+  <section class="cf container">
+    <header class="g-sm-col-4 g-lg-col-10 g-lg-push-1">
+      <h1 class="left logo">
+        <a href="/">
+
+            <img src="/static/v0.0.0/images/deepmind_logo.png"
+              srcset="/static/v0.0.0/images/deepmind_logo.png 1x, /static/v0.0.0/images/deepmind_logo@2x.png 2x"
+              alt="Yang Sen Ius">
+
+        </a>
+      </h1>
+
+      <div class="right social-items footer--social-items">
+        <p class="left grey-mid p--meta">
+
+        </p>
+        <ul class="left unstyled">
+
+
+
+        </ul>
+      </div>
+
+    </header>
+    <nav class="g-sm-col-4 g-md-col-3 g-lg-col-4 g-lg-push-1">
+      <ul class="cf unstyled footer--nav-list">
+
+        <li class="g-sm-col-4 footer--nav-list--item faux-link-block">
+          <a class="no-underline grey-dark p--module" href="/myself/">我是谁</a>
+          <a class="faux-link-block--link" href="/myself/">我是谁</a>
+        </li>
+
+        <li class="g-sm-col-4 footer--nav-list--item faux-link-block">
+          <a class="no-underline grey-dark p--module" href="/applied/">我在哪</a>
+          <a class="faux-link-block--link" href="/applied/">我在哪</a>
+        </li>
+
+        <li class="g-sm-col-4 footer--nav-list--item faux-link-block">
+          <a class="no-underline grey-dark p--module" href="/blog/">我在干什么</a>
+          <a class="faux-link-block--link" href="/blog/">我在干什么</a>
+        </li>
+
+        <li class="g-sm-col-4 footer--nav-list--item faux-link-block">
+          <a class="no-underline grey-dark p--module" href="/myself/">学术</a>
+          <a class="faux-link-block--link" href="/myself/">学术</a>
+        </li>
+
+        <li class="g-sm-col-4 footer--nav-list--item faux-link-block">
+          <a class="no-underline grey-dark p--module" href="/careers/">段子</a>
+          <a class="faux-link-block--link" href="/careers/">段子</a>
+        </li>
+
+      </ul>
+    </nav>
+    <div class="g-sm-col-4 g-md-col-2 g-lg-col-5 right">
+      <ul class="cf unstyled footer--nav-list">
+
+
+
+        <li class="g-sm-col-4 footer--nav-list--item-secondary">
+          <a class="no-underline grey-mid p--module" href="https://abc.xyz/">Blog订制</a>
+        </li>
+
+      </ul>
+      <p class="grey-mid-light p--module">© 2018 Blog Design -- Wechat:yangsenius</p>
+    </div>
+  </section>
+</footer>
+
+        </div>
+
+<section class="cookie-banner is-hidden"
+	data-dm-tmpl="cookie-banner"
+	data-last-updated="1526378400">
+	<div class="container cf">
+		<div class="rich-text"><p>本网站借鉴了多个网站的元素。如果你也想定制属于自己的个性化博客，可以Wechat联系<a href="">yangsenius</a></p></div>
+		<div data-close>
+			<svg class="icon icon-close">
+				<title>close</title>
+				<use xlink:href="#close"></use>
+			</svg>
+		</div>
+	</div>
+</section>
+
+
+        <script type="text/javascript" src="/html_style/b.js" defer></script>
+        <!-- Google Analytics -->
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-83756414-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+<!-- End Google Analytics -->
+
+    </body>
+</html>

@@ -327,7 +327,7 @@ document.writeln("<div class=\'page page-blog-listing\' data-dm-page=\'blog-list
 document.writeln("  <section class=\'section--block\'>");
 document.writeln("    <div class=\'container cf\'>");
 document.writeln("      <header class=\'section--header g-sm-col-4 g-lg-col-11 g-lg-push-1\'>");
-document.writeln("  <h1 class=\'h6   \' style=\'color:#FFC0CB  \' >一个手工设计的博客：皮得很  <a class=\'h6   \' style=\'color:#FFC0CB  \' href=\'https://senyang-ml.github.io\'> New~ https://senyang-ml.github.io </a></h1>");
+document.writeln("  <h1 class=\'h6   \' style=\'color:#FFC0CB  \' >一个手工设计的博客：皮得很  <a class=\'h6   \' style=\'color:#FFC0CB  \' href=\'https://senyang-ml.github.io\'>  https://senyang-ml.github.io </a></h1>");
 document.writeln("");
 document.writeln("    <a class=\'btn right\' href=\'/blog/feed/basic/\' data-ignore-link-click>");
 document.writeln("");
